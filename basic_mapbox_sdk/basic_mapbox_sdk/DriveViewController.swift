@@ -69,8 +69,6 @@ class DriveViewController: UIViewController {
 
 //        self.cameraVideoSource.start()
         self.visionManager.start()
-        self.startRecording()
-        
         
         self.setupEndDriveButton()
         self.motionManager.startAccelerometerUpdates()
@@ -80,17 +78,11 @@ class DriveViewController: UIViewController {
         super.viewDidDisappear(animated)
 
 //        self.cameraVideoSource.stop()
-//        self.visionManager.stopRecording()
         self.visionManager.stop() // also stops recording
         
         self.visionSafetyManager.destroy()
         self.visionManager.destroy()
         self.dataHandler.destroy()
-    }
-    
-    private func startRecording() {
-        let documentDirURL = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
-//        try? self.visionManager.startRecording(to: documentDirURL[0] + "/drive_data/")
     }
 
     private func addVisionView() {
