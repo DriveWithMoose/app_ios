@@ -2,31 +2,27 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Drive View Controller-->
+        <!--Drive Super View Controller-->
         <scene sceneID="aCe-Lu-iD8">
             <objects>
-                <viewController id="HFx-8h-9Ww" customClass="DriveViewController" customModule="basic_mapbox_sdk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HFx-8h-9Ww" customClass="DriveSuperViewController" customModule="basic_mapbox_sdk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YCG-ub-XsJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0b-fu-ghG">
-                                <rect key="frame" x="138" y="679" width="138" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="End drive">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QV-Og-NEb">
+                                <rect key="frame" x="147" y="681" width="121" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="End Drive"/>
                                 <connections>
-                                    <segue destination="S1P-CP-tqE" kind="presentation" modalPresentationStyle="fullScreen" id="wjn-tw-Nma"/>
+                                    <segue destination="S1P-CP-tqE" kind="presentation" modalPresentationStyle="fullScreen" id="rWK-1F-7LY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,7 +31,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7di-Ln-kBC"/>
                     <connections>
-                        <outlet property="endDriveButton" destination="v0b-fu-ghG" id="bgc-Um-fVM"/>
+                        <outlet property="endDriveButton" destination="9QV-Og-NEb" id="Jy3-g6-KRo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PbO-Ch-e8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -64,7 +60,7 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                 <state key="normal" title="Drive!"/>
                                 <connections>
-                                    <segue destination="HFx-8h-9Ww" kind="presentation" modalPresentationStyle="fullScreen" id="3eP-34-cpy"/>
+                                    <segue destination="HFx-8h-9Ww" kind="presentation" modalPresentationStyle="fullScreen" id="soH-z2-gw2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,9 +117,6 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

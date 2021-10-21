@@ -21,6 +21,8 @@
 		E72BAE082705A37C00A9A355 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BAE072705A37C00A9A355 /* DashboardViewController.swift */; };
 		E7AFE6352716D9480086C42F /* EndDriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFE6342716D9480086C42F /* EndDriveViewController.swift */; };
 		E7AFE639272162560086C42F /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFE638272162560086C42F /* DataHandler.swift */; };
+		E7B8B38F272186FA00BCF3FC /* DriveSuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B8B38E272186FA00BCF3FC /* DriveSuperViewController.swift */; };
+		E7B8B3912721877C00BCF3FC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B8B3902721877C00BCF3FC /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		E72BAE072705A37C00A9A355 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		E7AFE6342716D9480086C42F /* EndDriveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndDriveViewController.swift; sourceTree = "<group>"; };
 		E7AFE638272162560086C42F /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		E7B8B38E272186FA00BCF3FC /* DriveSuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveSuperViewController.swift; sourceTree = "<group>"; };
+		E7B8B3902721877C00BCF3FC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 				40A959F0268C3143000056D4 /* Info.plist */,
 				E7AFE6342716D9480086C42F /* EndDriveViewController.swift */,
 				E7AFE638272162560086C42F /* DataHandler.swift */,
+				E7B8B38E272186FA00BCF3FC /* DriveSuperViewController.swift */,
+				E7B8B3902721877C00BCF3FC /* UIViewControllerExtension.swift */,
 			);
 			path = basic_mapbox_sdk;
 			sourceTree = "<group>";
@@ -417,7 +423,9 @@
 			files = (
 				E72BAE082705A37C00A9A355 /* DashboardViewController.swift in Sources */,
 				E7AFE639272162560086C42F /* DataHandler.swift in Sources */,
+				E7B8B38F272186FA00BCF3FC /* DriveSuperViewController.swift in Sources */,
 				E7AFE6352716D9480086C42F /* EndDriveViewController.swift in Sources */,
+				E7B8B3912721877C00BCF3FC /* UIViewControllerExtension.swift in Sources */,
 				40A959E7268C3140000056D4 /* DriveViewController.swift in Sources */,
 				40A959E3268C3140000056D4 /* AppDelegate.swift in Sources */,
 				40A959E5268C3140000056D4 /* SceneDelegate.swift in Sources */,

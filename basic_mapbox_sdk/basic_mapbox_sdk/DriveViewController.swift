@@ -25,7 +25,7 @@ class BoundingBoxView: UIView {
 
 class DriveViewController: UIViewController {
     private var cameraVideoSource: CameraVideoSource!
-    private var visionManager: VisionReplayManager!
+    private var visionManager: BaseVisionManager!
     private var visionSafetyManager: VisionSafetyManager!
     private let visionViewController = VisionPresentationViewController()
 
@@ -37,24 +37,28 @@ class DriveViewController: UIViewController {
     private var frameSignClassifications: FrameSignClassifications? // to get signs
     private var camera: Camera?
     
-    @IBOutlet weak var endDriveButton: UIButton!
     private var dataHandler: DataHandler = DataHandler()
     private var motionManager: CMMotionManager = CMMotionManager()
 
+    
+    init(visionManager: VisionManager) {
+        super.init(nibName: nil, bundle: nil)
+        self.visionManager = visionManager
+    }
+    
+    init(visionReplayManager: VisionReplayManager) {
+        super.init(nibName: nil, bundle: nil)
+        print("AAAAAAAAA")
+        self.visionManager = visionReplayManager
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // create VisionManager, VisionSafetyManager, register as their delegates to receieve events
-//        self.cameraVideoSource = CameraVideoSource()
-        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] + "/driving_data/"
-        guard let visionReplayManager = try? VisionReplayManager.create(recordPath: path) else {
-            fatalError("\(path) doesn't exist")
-        }
-        self.visionManager = visionReplayManager
-
-            // VisionManager.create(videoSource: cameraVideoSource)
-        
-        self.visionManager.delegate = self
         self.visionSafetyManager = VisionSafetyManager.create(visionManager: visionManager)
         self.visionSafetyManager.delegate = self
 
@@ -67,21 +71,11 @@ class DriveViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-//        self.cameraVideoSource.start()
-        self.visionManager.start()
-        
-        self.setupEndDriveButton()
         self.motionManager.startAccelerometerUpdates()
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-
-//        self.cameraVideoSource.stop()
-        self.visionManager.stop() // also stops recording
-        
+    override func viewWillDisappear(_ animated: Bool) {
         self.visionSafetyManager.destroy()
-        self.visionManager.destroy()
         self.dataHandler.destroy()
     }
 
@@ -136,10 +130,6 @@ class DriveViewController: UIViewController {
                 self.view.addSubview(BoundingBoxView(frame: bboxInViewSpace))
             }
         }
-    }
-    
-    func setupEndDriveButton() {
-        self.view.addSubview(endDriveButton)
     }
 }
 
