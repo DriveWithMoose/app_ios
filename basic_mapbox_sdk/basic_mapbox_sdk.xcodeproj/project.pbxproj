@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02E2910A357C7EC4187560CC /* Pods_basic_mapbox_sdk_basic_mapbox_sdkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E859F27048EA130D283268 /* Pods_basic_mapbox_sdk_basic_mapbox_sdkUITests.framework */; };
+		3978A7F6EEDC3196F8FD128C /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 15DC518B354EC70C17FC2FC5 /* awsconfiguration.json */; };
 		40A959E3268C3140000056D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A959E2268C3140000056D4 /* AppDelegate.swift */; };
 		40A959E5268C3140000056D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A959E4268C3140000056D4 /* SceneDelegate.swift */; };
 		40A959E7268C3140000056D4 /* DriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A959E6268C3140000056D4 /* DriveViewController.swift */; };
@@ -17,12 +18,14 @@
 		40A959FA268C3143000056D4 /* basic_mapbox_sdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A959F9268C3143000056D4 /* basic_mapbox_sdkTests.swift */; };
 		40A95A05268C3143000056D4 /* basic_mapbox_sdkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A95A04268C3143000056D4 /* basic_mapbox_sdkUITests.swift */; };
 		446731E1EE3A664748EB48E6 /* Pods_basic_mapbox_sdkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074F36E2845683744B5F2B22 /* Pods_basic_mapbox_sdkTests.framework */; };
+		AE272F144CF728AA252FDA2E /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D2647EA22B29CC066691051D /* amplifyconfiguration.json */; };
 		DF62FB3614EEF654694E0EFE /* Pods_basic_mapbox_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23058D5CB224CC6F80B50B84 /* Pods_basic_mapbox_sdk.framework */; };
 		E72BAE082705A37C00A9A355 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BAE072705A37C00A9A355 /* DashboardViewController.swift */; };
 		E7AFE6352716D9480086C42F /* EndDriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFE6342716D9480086C42F /* EndDriveViewController.swift */; };
 		E7AFE639272162560086C42F /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFE638272162560086C42F /* DataHandler.swift */; };
 		E7B8B38F272186FA00BCF3FC /* DriveSuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B8B38E272186FA00BCF3FC /* DriveSuperViewController.swift */; };
 		E7B8B3912721877C00BCF3FC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B8B3902721877C00BCF3FC /* UIViewControllerExtension.swift */; };
+		E7FE4BEC272AAF1B0048BBF9 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE4BEB272AAF1B0048BBF9 /* Backend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		074F36E2845683744B5F2B22 /* Pods_basic_mapbox_sdkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basic_mapbox_sdkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15DC518B354EC70C17FC2FC5 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		1CA949A307D0E43EBB8C643F /* Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.debug.xcconfig"; path = "Target Support Files/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		23058D5CB224CC6F80B50B84 /* Pods_basic_mapbox_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basic_mapbox_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27924D13319375A2DD17CB09 /* Pods-basic_mapbox_sdkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic_mapbox_sdkTests.release.xcconfig"; path = "Target Support Files/Pods-basic_mapbox_sdkTests/Pods-basic_mapbox_sdkTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,12 +69,14 @@
 		7922BECEC7CB7735F113D4EF /* Pods-basic_mapbox_sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic_mapbox_sdk.release.xcconfig"; path = "Target Support Files/Pods-basic_mapbox_sdk/Pods-basic_mapbox_sdk.release.xcconfig"; sourceTree = "<group>"; };
 		88E859F27048EA130D283268 /* Pods_basic_mapbox_sdk_basic_mapbox_sdkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basic_mapbox_sdk_basic_mapbox_sdkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AE79802EC6BBBA8D886453 /* Pods-basic_mapbox_sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic_mapbox_sdk.debug.xcconfig"; path = "Target Support Files/Pods-basic_mapbox_sdk/Pods-basic_mapbox_sdk.debug.xcconfig"; sourceTree = "<group>"; };
+		D2647EA22B29CC066691051D /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		DF1F0D2D8EA794D9AAF4E2A1 /* Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.release.xcconfig"; path = "Target Support Files/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E72BAE072705A37C00A9A355 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		E7AFE6342716D9480086C42F /* EndDriveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndDriveViewController.swift; sourceTree = "<group>"; };
 		E7AFE638272162560086C42F /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		E7B8B38E272186FA00BCF3FC /* DriveSuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveSuperViewController.swift; sourceTree = "<group>"; };
 		E7B8B3902721877C00BCF3FC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		E7FE4BEB272AAF1B0048BBF9 /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 				40A959E0268C3140000056D4 /* Products */,
 				3291C0DC16F8A7B9931DBFBC /* Pods */,
 				0032AE15052FE8571C6900F3 /* Frameworks */,
+				6FBC5CE158EAB4D9487296B3 /* AmplifyConfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +161,7 @@
 				40A959E6268C3140000056D4 /* DriveViewController.swift */,
 				40A959E8268C3140000056D4 /* Main.storyboard */,
 				E72BAE072705A37C00A9A355 /* DashboardViewController.swift */,
+				E7FE4BEB272AAF1B0048BBF9 /* Backend.swift */,
 				40A959EB268C3143000056D4 /* Assets.xcassets */,
 				40A959ED268C3143000056D4 /* LaunchScreen.storyboard */,
 				40A959F0268C3143000056D4 /* Info.plist */,
@@ -181,6 +189,15 @@
 				40A95A06268C3143000056D4 /* Info.plist */,
 			);
 			path = basic_mapbox_sdkUITests;
+			sourceTree = "<group>";
+		};
+		6FBC5CE158EAB4D9487296B3 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				15DC518B354EC70C17FC2FC5 /* awsconfiguration.json */,
+				D2647EA22B29CC066691051D /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +311,8 @@
 				40A959EF268C3143000056D4 /* LaunchScreen.storyboard in Resources */,
 				40A959EC268C3143000056D4 /* Assets.xcassets in Resources */,
 				40A959EA268C3140000056D4 /* Main.storyboard in Resources */,
+				3978A7F6EEDC3196F8FD128C /* awsconfiguration.json in Resources */,
+				AE272F144CF728AA252FDA2E /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +442,7 @@
 			files = (
 				E72BAE082705A37C00A9A355 /* DashboardViewController.swift in Sources */,
 				E7AFE639272162560086C42F /* DataHandler.swift in Sources */,
+				E7FE4BEC272AAF1B0048BBF9 /* Backend.swift in Sources */,
 				E7B8B38F272186FA00BCF3FC /* DriveSuperViewController.swift in Sources */,
 				E7AFE6352716D9480086C42F /* EndDriveViewController.swift in Sources */,
 				E7B8B3912721877C00BCF3FC /* UIViewControllerExtension.swift in Sources */,

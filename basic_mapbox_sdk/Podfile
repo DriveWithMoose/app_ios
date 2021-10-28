@@ -18,6 +18,9 @@ target 'basic_mapbox_sdk' do
   # Safety
   pod "MapboxVisionSafety", :git => 'https://github.com/mapbox/mapbox-vision-ios.git', :tag => 'v0.14.0'
 
+  pod 'Amplify', '~> 1.0'             # required amplify dependency
+  pod 'Amplify/Tools', '~> 1.0'       # allows to call amplify CLI from within Xcode
+
   target 'basic_mapbox_sdkTests' do
     inherit! :search_paths
     # Pods for testing
@@ -26,5 +29,4 @@ target 'basic_mapbox_sdk' do
   target 'basic_mapbox_sdkUITests' do
     # Pods for testing
   end
-
 end
