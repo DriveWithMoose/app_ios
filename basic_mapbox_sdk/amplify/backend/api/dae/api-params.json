@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/dae",
+      "lambdaFunction": "dae",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/dae"
+    }
+  ],
+  "resourceName": "dae",
+  "apiName": "dae",
+  "functionArns": [
+    {
+      "lambdaFunction": "dae"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-iosapp-dev-51021-authRole",
+    "unAuthRoleName": "amplify-iosapp-dev-51021-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "dae",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

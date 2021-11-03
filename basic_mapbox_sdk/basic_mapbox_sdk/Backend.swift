@@ -20,7 +20,7 @@ class Backend {
     }
     
     public func sendData() {
-        Amplify.API.post(request: RESTRequest(path: "/dae2")) { result in
+        Amplify.API.post(request: RESTRequest(path: "/dae")) { result in
             switch result {
             case .success(let data):
                 let str = String(decoding: data, as: UTF8.self)

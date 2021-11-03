@@ -1,4 +1,36 @@
 PODS:
+  - Amplify (1.15.3):
+    - Amplify/Default (= 1.15.3)
+  - Amplify/Default (1.15.3)
+  - Amplify/Tools (1.15.3)
+  - AmplifyPlugins/AWSAPIPlugin (1.15.3):
+    - AppSyncRealTimeClient (~> 1.4)
+    - AWSCore (~> 2.26.1)
+    - AWSPluginsCore (= 1.15.3)
+  - AmplifyPlugins/AWSCognitoAuthPlugin (1.15.3):
+    - AWSAuthCore (~> 2.26.1)
+    - AWSCognitoIdentityProvider (~> 2.26.1)
+    - AWSCognitoIdentityProviderASF (~> 2.26.1)
+    - AWSCore (~> 2.26.1)
+    - AWSMobileClient (~> 2.26.1)
+    - AWSPluginsCore (= 1.15.3)
+  - AppSyncRealTimeClient (1.5.0):
+    - Starscream (~> 3.1.1)
+  - AWSAuthCore (2.26.3):
+    - AWSCore (= 2.26.3)
+  - AWSCognitoIdentityProvider (2.26.3):
+    - AWSCognitoIdentityProviderASF (= 2.26.3)
+    - AWSCore (= 2.26.3)
+  - AWSCognitoIdentityProviderASF (2.26.3)
+  - AWSCore (2.26.3)
+  - AWSMobileClient (2.26.3):
+    - AWSAuthCore (= 2.26.3)
+    - AWSCognitoIdentityProvider (= 2.26.3)
+    - AWSCognitoIdentityProviderASF (= 2.26.3)
+    - AWSCore (= 2.26.3)
+  - AWSPluginsCore (1.15.3):
+    - Amplify (= 1.15.3)
+    - AWSCore (~> 2.26.1)
   - MapboxAccounts (2.3.1)
   - MapboxMobileEvents (0.10.12)
   - MapboxVision (0.14.0):
@@ -21,9 +53,14 @@ PODS:
   - MapboxVisionSafety (0.14.0):
     - MapboxVision (= 0.14.0)
     - MapboxVisionNativeAll/Safety (= 0.14.0)
+  - Starscream (3.1.1)
   - ZIPFoundation (0.9.12)
 
 DEPENDENCIES:
+  - Amplify (~> 1.0)
+  - Amplify/Tools (~> 1.0)
+  - AmplifyPlugins/AWSAPIPlugin
+  - AmplifyPlugins/AWSCognitoAuthPlugin
   - MapboxVision (from `https://github.com/mapbox/mapbox-vision-ios.git`, tag `v0.14.0`)
   - MapboxVisionAR (from `https://github.com/mapbox/mapbox-vision-ios.git`, tag `v0.14.0`)
   - "MapboxVisionNativeAll (from `https://api.mapbox.com/downloads/v1/vision/ios/mapbox-vision-native-all/0.14.0.podspec?access_token=sk.eyJ1IjoiaG9ncHViIiwiYSI6ImNrcWZ2dTV3dTA4YWIydW51N3ZpaHh6NWQifQ.fRHem82eoZfXhC1x5mlG7g`)"
@@ -31,8 +68,18 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Amplify
+    - AmplifyPlugins
+    - AppSyncRealTimeClient
+    - AWSAuthCore
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSMobileClient
+    - AWSPluginsCore
     - MapboxAccounts
     - MapboxMobileEvents
+    - Starscream
     - ZIPFoundation
 
 EXTERNAL SOURCES:
@@ -60,14 +107,24 @@ CHECKOUT OPTIONS:
     :tag: v0.14.0
 
 SPEC CHECKSUMS:
+  Amplify: 0f1289c87ce5950d3c76d0e8e0ebbddbcda3cd30
+  AmplifyPlugins: c2e983fcde04092101425cbebf1c1dddf9c04123
+  AppSyncRealTimeClient: 2b4482b1770a3e5cf64f9714a6d198550017b5a2
+  AWSAuthCore: ce2089f8af1680aa433f6302b028ac786632cc5b
+  AWSCognitoIdentityProvider: a7e5caaade68cc93a92e3a888db30053dc167ee0
+  AWSCognitoIdentityProviderASF: ddcd5b1d919dccc15422b040ba4f99f5fbe85d9f
+  AWSCore: 7077ecff07ae3b184e65e2fa9855f6da048f9ae7
+  AWSMobileClient: 32f38bdb37ee29b2ac2c81739054f95bf3265f66
+  AWSPluginsCore: 7a1acaf5c6224bf6c2b678c24800c16563a76361
   MapboxAccounts: e40ef575df5d8b7ef33d0504ff2d393f4fde0455
   MapboxMobileEvents: b72b07268586c6fd1f53178f08df15f74070b188
   MapboxVision: 446e603a5dfa7f8c06006839d0b6b75aecbcc007
   MapboxVisionAR: b25d22aa80787556f852d24006803a41ae622742
   MapboxVisionNativeAll: 3c111fc435bb3a4d040903a355c73fd85fb3d77e
   MapboxVisionSafety: 2a6ee4ff45b18de4d2d317018f7c195e124a456f
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   ZIPFoundation: e27423c004a5a1410c15933407747374e7c6cb6e
 
-PODFILE CHECKSUM: 5a89d200d761a6af46e543304016db7ab46ae634
+PODFILE CHECKSUM: 10704e829fd2f53d26dad5f049fbe1aaffef9d0b
 
 COCOAPODS: 1.11.2

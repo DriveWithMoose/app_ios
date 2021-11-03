@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-iosapp-dev-51021-authRole",
+      "UnauthRoleArn": "arn:aws:iam::806706879103:role/amplify-iosapp-dev-51021-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::806706879103:role/amplify-iosapp-dev-51021-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-iosapp-dev-51021-deployment",
+      "UnauthRoleName": "amplify-iosapp-dev-51021-unauthRole",
+      "StackName": "amplify-iosapp-dev-51021",
+      "StackId": "arn:aws:cloudformation:us-west-1:806706879103:stack/amplify-iosapp-dev-51021/05e14a00-3c9f-11ec-8e57-0214cb169c61",
+      "AmplifyAppId": "d3cp6qr0e2v2dh"
+    },
+    "categories": {
+      "auth": {
+        "iosappc6578605": {}
+      },
+      "function": {
+        "dae": {
+          "deploymentBucketName": "amplify-iosapp-dev-51021-deployment",
+          "s3Key": "amplify-builds/dae-6b49427a7447594d5831-build.zip"
+        }
+      }
+    }
+  }
+}
