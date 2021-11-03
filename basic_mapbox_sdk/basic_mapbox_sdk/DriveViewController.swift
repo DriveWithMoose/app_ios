@@ -77,6 +77,7 @@ class DriveViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         self.visionSafetyManager.destroy()
         self.dataHandler.destroy()
+        Backend.shared.sendData()
     }
 
     private func addVisionView() {

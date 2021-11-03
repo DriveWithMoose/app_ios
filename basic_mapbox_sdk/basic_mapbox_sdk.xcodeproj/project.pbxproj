@@ -47,7 +47,7 @@
 
 /* Begin PBXFileReference section */
 		074F36E2845683744B5F2B22 /* Pods_basic_mapbox_sdkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basic_mapbox_sdkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15DC518B354EC70C17FC2FC5 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		15DC518B354EC70C17FC2FC5 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = awsconfiguration.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		1CA949A307D0E43EBB8C643F /* Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.debug.xcconfig"; path = "Target Support Files/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		23058D5CB224CC6F80B50B84 /* Pods_basic_mapbox_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basic_mapbox_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27924D13319375A2DD17CB09 /* Pods-basic_mapbox_sdkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic_mapbox_sdkTests.release.xcconfig"; path = "Target Support Files/Pods-basic_mapbox_sdkTests/Pods-basic_mapbox_sdkTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		7922BECEC7CB7735F113D4EF /* Pods-basic_mapbox_sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic_mapbox_sdk.release.xcconfig"; path = "Target Support Files/Pods-basic_mapbox_sdk/Pods-basic_mapbox_sdk.release.xcconfig"; sourceTree = "<group>"; };
 		88E859F27048EA130D283268 /* Pods_basic_mapbox_sdk_basic_mapbox_sdkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basic_mapbox_sdk_basic_mapbox_sdkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AE79802EC6BBBA8D886453 /* Pods-basic_mapbox_sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic_mapbox_sdk.debug.xcconfig"; path = "Target Support Files/Pods-basic_mapbox_sdk/Pods-basic_mapbox_sdk.debug.xcconfig"; sourceTree = "<group>"; };
-		D2647EA22B29CC066691051D /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		D2647EA22B29CC066691051D /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		DF1F0D2D8EA794D9AAF4E2A1 /* Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.release.xcconfig"; path = "Target Support Files/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E72BAE072705A37C00A9A355 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		E7AFE6342716D9480086C42F /* EndDriveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndDriveViewController.swift; sourceTree = "<group>"; };
@@ -363,9 +363,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests/Pods-basic_mapbox_sdk-basic_mapbox_sdkUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -424,9 +428,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-basic_mapbox_sdk/Pods-basic_mapbox_sdk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-basic_mapbox_sdk/Pods-basic_mapbox_sdk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

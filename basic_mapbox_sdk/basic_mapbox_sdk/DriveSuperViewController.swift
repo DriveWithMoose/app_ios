@@ -9,7 +9,7 @@ import UIKit
 import MapboxVision
 
 class DriveSuperViewController: UIViewController {
-    let replay = false
+    let replay = true
     
     private var driveViewController: DriveViewController!
     private var cameraVideoSource: CameraVideoSource?
